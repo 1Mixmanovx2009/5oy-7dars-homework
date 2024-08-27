@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+    </style>
+</head>
+<body class="login-body">
+    
+    <div class="fixed top-0 bottom-0 right-0 left-0 m-auto w-[621px] h-[519px] bg-white rounded-[25px] pt-[35px] pb-[46px] text-center">
+        <img class="mx-auto mb-[17px]" src="./images/Intex-market.uz.svg" alt="" width="421px" height="72px">
+        <h2 class="login-h2 text-[25px] font-bold mb-[70px] text-[#A3A3A3] leading-[29.03px] font-">Введите имя пользователя и пароль, чтобы получить доступ к системе.</h2>
+        <form class="login-form flex flex-col items-center">
+            <input autocomplete="off" class="login-input w-[359px] py-[12px] mb-4 outline-none focus:border-[#3F8C8E] text-center font-bold text-25px rounded-[17px] border-[2px] border-[#A3A3A3] shadow-inputShadow" type="text" name="username" placeholder="Имя пользователя">
+            
+            <input autocomplete="off" class="login-input w-[359px] mb-2 py-[12px] outline-none focus:border-[#3F8C8E] text-center font-bold text-25px rounded-[17px] border-[2px] border-[#A3A3A3] shadow-inputShadow" type="password" name="password" placeholder="Пароль">
+            
+            <a class="login-link font-bold text-[#3F8C8E] text-[18px]" href="/register.html">Forgot password</a>
+            
+            <button class="login-btn w-[237px] border-[4px] border-white duration-300 text-[25px] rounded-[10px] mt-10 text-center text-white font-bold p-[6px] bg-[#3F8C8E]" type="submit">Войти</button>
+            
+        </form>
+    </div>
+    
+    
+    <script src="./js/admin/login.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    boxShadow: {
+                        'inputShadow': '0px 0px 7px 0px #00000040',
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

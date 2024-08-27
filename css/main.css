@@ -1,0 +1,35 @@
+.login-body {
+    background-image: url(../images/login-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    height: 100vh;
+}
+
+.register-body {
+    background-image: url(../images/register-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    height: 100vh;
+}
+
+.login-h2 {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.login-input {
+    font-family:  "Trebuchet MS", sans-serif;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #3F8C8E;
+
+}
+
+.login-btn:hover {
+    background-color: white;
+    border-color: #3F8C8E;
+    color: #3F8C8E;
+}
